@@ -1,45 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - A program that prints combination of all two digit numbers 0-99.
+ * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Succes)
  */
+
 int main(void)
 {
-	int fTens;
-	int fOnes;
-	int sTens;
-	int sOnes;
-	int num, num2;
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-	for (num = 0; num <= 99; num++)
+for ( tho = 0 ; tho < 10 ; tho++)
+{	
+
+	for (hun = 0 ; hun <= 10 ; hun++)
 	{
-		fTens = num / 10;
-		fOnes = num % 10;
-
-		for (num2 = 0; num2 <= 99; num2++)
+	
+		for (ten = 0 ; ten < 10 ; ten++)
 		{
-			sTens = num2 / 10;
-			sOnes = num2 % 10;
-
-			if (fTens < sTens || (fTens == sTens && fOnes < sOnes))
+			for ( bas = 0 ; bas < 10 ; bas++)
 			{
-				putchar(fTens + '0');
-				putchar(fOnes + '0');
-				putchar(' ');
-				putchar(sTens + '0');
-				putchar(sOnes + '0');
-
-					if (!(fTens == 9 && fOnes == 8))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				putchar('0' + tho);
+				putchar('0' + hun);
+				putchar(32);
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
+				{
+					putchar(',');
+					putchar(32);
 				}
+				bas++;
+			}
 		}
 	}
-		putchar('\n');
-
+}
+	putchar('\n');
 	return (0);
-}}
+}
+
