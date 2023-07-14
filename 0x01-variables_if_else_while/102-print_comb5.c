@@ -1,27 +1,44 @@
 #include <stdio.h>
 
-int main() {
-    int i, j;
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Succes)
+ */
 
-    for (i = 0; i < 100; i++) {
-        for (j = i; j < 100; j++) {
-            int tens_i = i / 10;
-            int ones_i = i % 10;
-            int tens_j = j / 10;
-            int ones_j = j % 10;
+int main(void)
+{
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-            putchar('0' + tens_i);
-            putchar('0' + ones_i);
-            putchar(' ');
-            putchar('0' + tens_j);
-            putchar('0' + ones_j);
+for ( tho = 0 ; tho < 10 ; tho++)
+{	
 
-            if (i != 99 || j != 99) {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-
-    return 0;
+	for (hun = 0 ; hun <= 10 ; hun++)
+	{
+	
+		for (ten = 0 ; ten < 10 ; ten++)
+		{
+			for ( bas = 0 ; bas < 10 ; bas++)
+			{
+				putchar('0' + tho);
+				putchar('0' + hun);
+				putchar(32);
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
+				{
+					putchar(',');
+					putchar(32);
+				}
+				bas++;
+			}
+		}
+	}
+}
+	putchar('\n');
+	return (0);
+}
 }
