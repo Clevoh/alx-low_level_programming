@@ -1,15 +1,16 @@
-#include "atdio.h"
+#include "main.h"
 /**
- * print_alphabet - prints the english alphabet from a-z.
- * Return: Nothing.
+ * print_alphabet - prints the alphabet in lower case.
+ *
+ * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
-	char c;
+init i;
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-	_putchar('\n');
+for (i = 97; i <= 122; i++)
+{
+_putchar(i);
+}
+_putchar('\n');
 }
