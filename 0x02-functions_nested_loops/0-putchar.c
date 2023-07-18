@@ -5,7 +5,7 @@
  *Description: 'prints _putchar to stdout'
  * Return; always 0
  */
-
+int _putchar(char c);
 int main(void)
 {
 _putchar('_');
