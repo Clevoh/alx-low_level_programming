@@ -3,9 +3,10 @@
 /**
  * main-Entry point of my code
  *Description: 'prints _putchar to stdout'
- * Return; always 0
+ * Return: always 0
+ * int _putchar(char c);
  */
-int _putchar(char c);
+
 int main(void)
 {
 _putchar('_');
