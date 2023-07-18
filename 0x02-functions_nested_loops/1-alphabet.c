@@ -6,7 +6,7 @@
  */
 void print_alphabet(void)
 {
-init i;
+int i;
 
 for (i = 97; i <= 122; i++)
 {
