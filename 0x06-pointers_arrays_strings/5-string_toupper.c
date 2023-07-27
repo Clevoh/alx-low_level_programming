@@ -1,11 +1,11 @@
-#include "main'h"
+#include "main.h"
 /**
- * string touper - change lowercase to uppercase
- * @s: analised string
+ * string_toupper - change lowercase letters to uppercase.
+ * @s: analized string.
  *
- * Return: always 0
+ * Return: String with all letters Uppercased.
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
@@ -19,3 +19,4 @@ char *string_toupper(char *)
 	}
 	return (s);
 }
+
