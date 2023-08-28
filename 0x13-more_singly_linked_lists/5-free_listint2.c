@@ -3,7 +3,7 @@
 /**
  * free_listint2 - Frees a listint_t list.
  * @head: A pinter to pointer to the head
- * 	of linked list.
+ * of linked list.
  *
  * Description: Sets the head to NULL.
  */
